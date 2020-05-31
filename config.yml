@@ -1,0 +1,26 @@
+# slack token generate by slack app. step by step guide to generate the token
+# https://github.com/slackapi/python-slackclient/tree/master/tutorial
+
+slack_token: "xoxb-<token number>"
+
+slack_channel: "#carpark" # channel should be mentioned with hash
+intersection_value: 0.2   # intersection between parking and car; 0.2 is best performing value, change only if necessary
+
+status_interval: 10 # status of parking is informed after every 10 seconds 
+
+# result directory - all the output frames will be stored
+result_dir: "result/"
+
+parking_slots:
+- id: 0
+  coordinates: [5,692,330,999]
+- id: 1
+  coordinates: [290,663,775,997]
+- id: 2
+  coordinates: [746,619,1230,998]
+- id: 3
+  coordinates: [1525,580,1957,940]
+- id: 4
+  coordinates: [1900,580,2400,999]
+- id: 5
+  coordinates: [2300,600,2800,950]
